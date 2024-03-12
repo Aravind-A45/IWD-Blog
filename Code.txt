@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="..." crossorigin="anonymous">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  h4 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .slides {
+    display: none;
+  }
+  img {
+    vertical-align: middle;
+  }
+  
+  .container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  
+  .slides {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .active {
+    background-color: grey;
+  }
+  .dots {
+    text-align: center;
+  }
+  .nav-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .link {
+    display: flex;
+    list-style: none;
+  }
+  .link li {
+    margin-right: 40px;
+  }
+  .link a {
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .link a:hover {
+    background-color: #555;
+  }
+  .form {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    z-index: 999; 
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    background-color: grey; 
+    color: white; 
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .footer-menu a {
+    color: white; 
+  }
+  
+  .social-media a {
+    color: white; 
+  }
+  
+  .footer-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-logo {
+    max-width: 100px;
+    height: auto;
+  }
+  .list-unstyled li a{
+    color: white;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+  </style>
+<body>
+  <h1>WELCOME TO KCT</h1>
+  <div class="nav-container">
+    <nav class="navbar">
+      <ul class="link">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.kct.ac.in/about/">About</a></li>
+        <li><a href="https://www.kct.ac.in/internal-complaints-and-women-empowerment-committee/">Services</a></li>
+        <li><a href="mailto:info@kct.ac.in">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <h4>ABOUT US</h4>
+  <p>Kumaraguru College of Technology (KCT),</p> 
+  <p>Coimbatore is a private Engineering College started in 1984 under the auspices of Ramanandha Adigalar Foundation,</p> 
+  <p>a charitable educational trust of Sakthi Group.</p>
+  <div class="kct">
+    <img src="https://www.kct.ac.in/wp-content/uploads/2023/01/kctnaac.png" width="20%">
+  </div>
+  <br>
+  
+  <br>
+  <div class="container">
+    <div class="slides">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://img.collegepravesh.com/2022/05/KCT-Coimbatore.jpg" style="width:100%">
+    </div>
+    
+    <div class="slides">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://blog.kct.ac.in/wp-content/uploads/2018/05/sliderpic6-1920x1080.jpg" style="width:100%">
+    </div>
+    
+    <div class="slides">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://www.kct.ac.in/wp-content/uploads/2020/08/jyothi-nilayam.png" style="width:100%">
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="dots">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+
+
+
+  <script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); 
+  }
+  </script>
+  <br>
+  <br>
+  <br>
+  <h3>Just Apply</h3>
+  <table class="section">
+    <tr>
+      <td>Name :</td>
+    </tr>
+    <tr>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Gender :</td>
+    </tr>
+    <tr>
+      <td>
+        <form>
+          <input type="radio" name="gender" value="male" id="male"> Male
+          <input type="radio" name="gender" value="female" id="female"> Female
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>Email ID :</td>
+    </tr>
+    <tr>
+      <td><input type="email"></td>
+    </tr>
+    <tr>
+      <td>Phone Number :</td>
+    </tr>
+    <tr>
+      <td><input type="number"></td>
+    </tr>
+    <tr>
+      <td>Address :</td>
+    </tr>
+    <tr>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Date :</td>
+    </tr>
+    <tr>
+      <td><input type="date"></td>
+    </tr>
+    <br>
+  </table>
+  <br>
+  <table class="button">
+    <tr>
+      <td><button type="button">Submit</button></td>
+    </tr>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input[type="radio"]').click(function(){
+                var inputValue = $(this).attr("value");
+                $("input[type='radio']").removeAttr('checked');
+                $(this).attr('checked', 'checked');
+            });
+        });
+    </script>  
+    <br>
+    <footer>
+      <div class="container">
+        <div class="row m-0">
+            <div id="footer-menu" class="col-sm-12">
+                <ul class="list-unstyled">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <li><a href="https://www.kct.ac.in/about/">About</a></li>
+                            <li><a href="https://www.kct.ac.in/our-programmes/">Study</a></li>
+                            <li><a href="https://www.kct.ac.in/student-research/">Research</a></li>
+                            <li><a href="https://www.kct.ac.in/the-campus/">Student life</a></li>
+                        </div>
+                        <div class="col-md-3">
+                            <li><a href="https://www.kct.ac.in/placement/">Placement</a></li>
+                            <li><a href="https://blog.kct.ac.in/">Blog</a></li>
+                            <li><a href="https://www.kct.ac.in/media-centre/" target="_blank">Media Centre</a></li>
+                            <li><a href="https://www.kct.ac.in/social-consciousness-and-outreach/">Social</a></li>
+                        </div>
+                        <div class="col-md-3">
+                            <li><a href="https://www.kct.ac.in/microcosm/">Microcosm</a></li>
+                            <li><a href="https://www.kct.ac.in/nirf-nba/">NAAC & NIRF</a></li>
+                            <li><a href="https://www.kct.ac.in/alumni/">Alumni</a></li>
+                            <li><a href="https://www.kct.ac.in/international/">International</a></li>
+                        </div>
+                        <div class="col-md-3">
+                            <li><a href="https://www.kct.ac.in/kumaraguru-institutions/">Kumaraguru Institutions</a></li>
+                            <li><a href="https://careers.kct.ac.in" target="_blank">Careers</a></li>
+                            <li><a href="https://www.kct.ac.in/live/">Events</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <br>
+            <br>
+
+            <div class="social-media col-md-12 p-0">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <img src="https://www.kct.ac.in/wp-content/uploads/2023/01/kctwhite_LOGO.png" alt="Footer Logo" class="img-fluid footer-logo">
+                      <ul class="list-unstyled" id="getInTouch">
+                          <li class="fotter-contact">Admission Details</li>
+                          <li><a href="tel:04222661439"><span class="name">Landline 1</span><span> : 0422-2661439</span></a></li>
+                          <li><a href="tel:04222661455"><span class="name">Landline 2</span><span> : 0422-2661455</span></a></li>
+                          <li><a href="tel:9944413232"><span class="name">Mob.no 1</span><span> : 9944413232</span></a></li>
+                          <li class="fotter-contact">Contact details</li>
+                          <li><a href="tel:04222661100"><span class="name">College</span><span> : 0422-2661100</span></a></li>
+                          <li><a href="fax:04222669406"><span class="name">Fax</span><span> : 0422-2669406</span></a></li>
+                          <li><a href="tel:04222661515"><span class="name">Placement</span><span>  : 0422-2661515</span></a></li>
+                          <li><a href="tel:04222661121"><span class="name">Principal</span><span> : 0422-2661121</span></a></li>
+                          <li><a href="mailto:info@kct.ac.in"><span class="name">E-mail </span><span>  : info@kct.ac.in</span></a></li>
+                          <li><a><span class="name" style="color: #fff !important;font-weight:bold !important;">Address</span><span>  <br> Kumaraguru College of Technology,
+                              Saravanampatti, Chinnavedampatti (Post),
+                              Coimbatore- 641049, Tamilnadu.
+                              </span></a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3 other-links">
+                      <p>Explore</p>
+                      <ul class="list-unstyled">
+                          <li><a href="https://www.kct.ac.in/approval-letters/">Approval Letters</a></li>
+                          <li><a href="https://www.aicte-india.org/sites/default/files/list-suggested-books-indian-authors-publishers.pdf" target="_blank">AICTE Recommended Books for Engg Programmes</a></li>
+                          <li><a href="https://www.kct.ac.in/wp-content/uploads/2023/06/ARIIA-2022-Report.pdf" target="_blank">ARIIA 2022 report</a></li>
+                          <li><a href="https://www.kct.ac.in/financial-statements/">Financial Statements</a></li>
+                          <li><a href="https://www.kct.ac.in/wp-content/themes/twentytwenty/assets/pdf/Higher-Education-Policy.pdf" target="_blank">Higher Education Policy</a></li>
+                          <li><a href="https://www.kct.ac.in/hr-policy/">HR Policy</a></li>
+                          <li><a href="https://www.kct.ac.in/iqac/">IQAC</a></li>
+                          <li><a href="https://propvr.tech/embed.html?cid=SPG18GMVTHUvhLvXC4nOXOZorjc2&amp;proid=KCT%20VIRTUAL%20TOUR" target="_blank">KCT Virtual Tour</a></li>
+                          <li><a href="https://www.kct.ac.in/wp-content/uploads/2023/05/Mandatory-Disclosure-2022-23.pdf" target="_blank">Mandatory Disclosure</a></li>
+                          <li><a href="https://www.kct.ac.in/non-statutory-committees/">Non - Statutory committees</a></li>
+                          <li><a href="https://www.kct.ac.in/approval-letters/">NIRF</a></li>
+                          <li><a href="https://www.kct.ac.in/right-to-information-rti/">RTI</a></li>
+                          <li><a href="https://www.kct.ac.in/statutory-committees/">Statutory committees</a></li>
+                          <li><a href="https://www.kct.ac.in/wp-content/uploads/2021/08/Undertaking.pdf" target="_blank">Undertaking</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3 other-links">
+                      <p>Quick Links</p>   
+                      <ul class="list-unstyled">
+                          <li><a href="https://www.aicte-india.org/feedback/" target="_blank">AICTE - Feedback</a></li>
+                          <li><a href="https://kct.directverify.in/" target="_blank">Apply for WES/ Transcript &amp; Student Verification / Genuineness Verification</a></li>
+                          <li><a href="https://www.kct.ac.in/anti-ragging-affidavit/">Anti-Ragging</a></li>
+                          <li><a href="http://grievances.kct.ac.in/" target="_blank">Grievance redressal portal</a></li>
+                          <li><a href="https://www.kct.ac.in/internal-complaints-and-women-empowerment-committee/">Internal Complaints and Women Empowerment Committee</a></li>  
+                          <li><a href="http://smartapps.kct.ac.in/" target="_blank">Smartapps</a></li>
+                      </ul>
+                      <p style="padding-top: 20px;">Professional Chapters</p>
+                      <ul class="list-unstyled">
+                          <li><a href="http://acm.kct.ac.in/" target="_blank">ACM Student Chapter</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3 other-links">
+                      <p>Academics</p>
+                      <ul class="list-unstyled">
+                          <li><a href="https://www.kct.ac.in/academic-regulations/">Academic Regulations</a></li>
+                          <li><a href="https://www.kct.ac.in/academic-calendar/">Academic Calendar</a></li>
+                          <li><a href="https://www.kct.ac.in/wp-content/uploads/2023/11/A4_Annual_Report_2021.pdf" target="_blank">Annual Report</a></li>
+                          <li><a href="https://www.kct.ac.in/coe-corner/">CoE Corner</a></li>
+                          <li><a href="https://www.kct.ac.in/learning-augmented">Learning Augmented</a></li>
+                          <li><a href="https://www.kct.ac.in/wp-content/uploads/2023/03/KI_KRA_Website-Copy.pdf" target="_blank">Strategic Plan</a></li> 
+                      </ul>
+                      <br>
+                      <br>
+                      <br>
+                      <p>Follow us on</p>
+                      <ul class="list-unstyled social-media-icon">
+                          <li><a href="https://www.facebook.com/KCT.edu/"><i class="fab fa-facebook-square"></i></a></li>
+                          <li><a href="https://www.instagram.com/kct_84/"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="https://twitter.com/KCTOfficial"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="https://www.linkedin.com/school/kct/"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href="https://www.youtube.com/channel/UCQ71Y6dp5f-HZaKB4ZQZDlg"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <hr>
+      <div class="copyright">
+        <li>Copyright © 2024 KCT. All Rights Reserved</li>          
+      </div>
+  
+  </footer>
+</body>
+</html> 
